@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+SÔ 1 <br><br>
+<input type="number" id="1"> <br><br>
+SỐ 2 <br><br>
+<input type="number" id="2"><br><br>
+<select id="3"> <br><br>
+    <option>+</option>
+    <option>-</option>
+    <option>*</option>
+    <option>\</option>
+</select><br><br>
+ <input type="text" id="4">
+<button type="button" onclick="myfunction">sumit</button>
+
+<script>
+    function myfunction(){
+        let a = document.getElementById('1').value;
+        let b = document.getElementById('2').value;
+        let c = document.getElementById('3').value;
+        let ketqua1 = 0;
+        if(c =="+"){
+        ketqua1 = parseInt(a) + parseInt(b);
+        }
+        else if(c=="-"){
+            ketqua1 = parseInt(a) - parseInt(b);
+        }
+        else if(c=="*"){
+            ketqua1 = parseInt(a) * parseInt(b);
+        }
+        else {
+            ketqua1 = parseInt(a) \ parseInt(b);
+        }
+        document.getElementById('4')value = 4;
+    }
+
+</script>
+</body>
+</html>
